@@ -29,13 +29,6 @@ An IoT-enabled Smart Parking System that helps optimize urban parking space thro
 - Android Studio (Java/Kotlin)
 - Arduino IDE
 
-## 📸 Screenshots
-
-![Login Page](screenshots/login.png)
-![Slot Booking](screenshots/slot-booking.png)
-![Circuit Diagram](screenshots/circuit.png)
-
-
 ## ⚙️ Setup Instructions
 
 1. Install XAMPP and start Apache & MySQL.
