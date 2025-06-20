@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/side_nav_bar"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="91dp"
+                android:layout_height="83dp"
+                android:contentDescription="Navigation Header"
+                android:paddingTop="8dp"
+                app:srcCompat="@drawable/avatar_1" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Android"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="androidStudion@gmail.com" />
+        </LinearLayout>
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.04">
+
+            <ImageButton
+                android:id="@+id/status"
+                android:layout_width="100dp"
+                android:layout_height="99dp"
+                android:layout_x="155dp"
+                android:layout_y="1dp"
+                android:background="@drawable/paarking" />
+
+            <ImageButton
+                android:id="@+id/parking"
+                android:layout_width="100dp"
+                android:layout_height="99dp"
+                android:layout_x="19dp"
+                android:layout_y="-1dp"
+                android:background="@drawable/str_park" />
+
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="99dp"
+                android:layout_x="17dp"
+                android:layout_y="128dp"
+                android:background="@drawable/person" />
+
+            <ImageButton
+                android:id="@+id/cancle"
+                android:layout_width="99dp"
+                android:layout_height="106dp"
+                android:layout_x="282dp"
+                android:layout_y="0dp"
+                android:background="@drawable/cancle_park"
+                android:text="Button" />
+
+        </AbsoluteLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
